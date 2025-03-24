@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "67d7ce8daaefe8aceca4c2a4"
+  },
+  "username": "Admin",
+  "password": "$2b$10$jr6yqVIqvSjYh1TQEGMdcOaZVYJChZhUYjkNi3RVPIfvHWsQoXcWO",
+  "email": "admin@example.com",
+  "fullName": "",
+  "avatarUrl": "",
+  "status": false,
+  "loginCount": 0,
+  "role": {
+    "$oid": "67d7cc30da5353683e995962"
+  },
+  "createdAt": {
+    "$date": "2025-03-17T07:26:05.337Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-17T07:26:05.337Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d7cf75aaefe8aceca4c2ae"
+  },
+  "username": "user",
+  "password": "$2b$10$fRfWdFDr1w/0OQBJFGB9vuL3h3g2kqL5XJzYPWYYdEbKuImoEcoFK",
+  "email": "user@example.com",
+  "fullName": "",
+  "avatarUrl": "",
+  "status": false,
+  "loginCount": 0,
+  "role": {
+    "$oid": "67d7cf38aaefe8aceca4c2a8"
+  },
+  "createdAt": {
+    "$date": "2025-03-17T07:29:57.515Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-17T09:56:33.520Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e105bb0c614590ee7b004b"
+  },
+  "username": "moderator",
+  "password": "$2b$10$.QN2Ji2eVKEUwy9xXD1jROe6PoBWqd5PPG9vezJgqd9GJtyHeAxUK",
+  "email": "mod@example.com",
+  "fullName": "Tran Van B",
+  "avatarUrl": "https://example.com/mod-avatar.jpg",
+  "status": false,
+  "loginCount": 0,
+  "role": {
+    "$oid": "67e102daa322062097db90b5"
+  },
+  "createdAt": {
+    "$date": "2025-03-24T07:11:55.756Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-24T07:11:55.756Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e105e60c614590ee7b0050"
+  },
+  "username": "admin02",
+  "password": "$2b$10$owO0w7yMHov/dGQQuVVRh.7Bf9h5MiaNwR1As7vMkA5ifNMaB2ViW",
+  "email": "admin02@example.com",
+  "fullName": "Tran Van Admin",
+  "avatarUrl": "https://example.com/mod-avatar.jpg",
+  "status": false,
+  "loginCount": 0,
+  "role": {
+    "$oid": "67d7cc30da5353683e995962"
+  },
+  "createdAt": {
+    "$date": "2025-03-24T07:12:38.503Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-24T07:12:38.503Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e1063a0c614590ee7b0055"
+  },
+  "username": "usertest",
+  "password": "$2b$10$k6DFi/Tza/P4Rfhg.jNDAOFhBocKQvXauM6HQC6DioX5WOD970TIu",
+  "email": "usertest@example.com",
+  "fullName": "Tran Van User",
+  "avatarUrl": "https://example.com/mod-avatar.jpg",
+  "status": false,
+  "loginCount": 0,
+  "role": {
+    "$oid": "67d7cf38aaefe8aceca4c2a8"
+  },
+  "createdAt": {
+    "$date": "2025-03-24T07:14:02.813Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-24T07:14:02.813Z"
+  },
+  "__v": 0
+}]

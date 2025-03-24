@@ -9,7 +9,7 @@ module.exports = {
     getUserById: async function(id){
         return await userSchema.findById(id).populate("role");
     },
-    createUser:async function(username,password,email,role){
+    createUser:async function(username,password,email,role, fullName, avatarUrl){
         let roleCheck = await roleSchema.findOne({roleName:role});
         if(roleCheck){
             let newUser = new userSchema({
@@ -17,6 +17,8 @@ module.exports = {
                 password: password,
                 email: email,
                 role: roleCheck._id,
+                fullName: fullName || '',
+                avatarUrl: avatarUrl || ''
             });
             await newUser.save();    
             return newUser;  

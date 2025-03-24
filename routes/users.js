@@ -6,6 +6,7 @@ let BuildQueries = require('../Utils/BuildQuery');
 let {check_authentication,
   check_authorization} = require('../Utils/check_auth')
 let constants = require('../Utils/constants')
+let { validators, validator_middleware } = require('../Utils/validator')
 
 router.get('/', async function(req, res, next) {
   let queries = req.query;
@@ -29,15 +30,20 @@ router.get('/:id',check_authentication, async function(req, res, next) {
   }
 });
 
-router.post('/',check_authentication,
-check_authorization(constants.MOD_PERMISSION),async function(req, res, next) {
+router.post('/',
+  check_authentication,
+  check_authorization(constants.MOD_PERMISSION),
+  validators, validator_middleware,
+  async function(req, res, next) {
   try {
     let body = req.body;
         let result = await userController.createUser(
           body.username,
           body.password,
           body.email,
-          body.role
+          body.role,
+          body.fullName,
+          body.avatarUrl
         )
         res.status(200).send({
           success:true,
